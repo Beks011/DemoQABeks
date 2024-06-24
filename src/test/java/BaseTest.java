@@ -15,8 +15,8 @@ public  class BaseTest {
     protected PracticeFormPage practiceFormPage;
     protected WebElementActions webElementActions;
     protected DemoQAPages demoQAPages;
-    protected OrangePage orangePage;
-    protected ProgressBarPage progressBarPage;
+
+
     @BeforeClass(alwaysRun = true)
     public void setup(){
         driver= DriverManager.getDriver();
@@ -25,8 +25,8 @@ public  class BaseTest {
         practiceFormPage = new PracticeFormPage();
         webElementActions = new WebElementActions();
         demoQAPages = new DemoQAPages();
-        orangePage  =new OrangePage();
-        progressBarPage = new ProgressBarPage();
+
+
         demoQAPages.setUp();
 
 

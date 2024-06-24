@@ -9,9 +9,9 @@ public class WebTablesTest extends BaseTest {
     @Test(description = "Practice form test")
     public void test123(){
         driver.get("https://demoqa.com/webtables");
-        demoQAPages.webTablesPage.addNewEmployee(randomUtils.createMockEmployee());
+        demoQAPages.getWebTablesPage().addNewEmployee(randomUtils.createMockEmployee());
 
-        List<Employee> employees = demoQAPages.webTablesPage.getEmployeesFromTable();
+        List<Employee> employees = demoQAPages.getWebTablesPage().getEmployeesFromTable();
 
         for (Employee employee: employees){
             System.out.println(employee);

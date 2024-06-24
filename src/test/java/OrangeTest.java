@@ -7,7 +7,7 @@ public class OrangeTest extends BaseTest{
     @Test(groups = {"Regression","2"},description = "OrangeTest")
     public void orangeTest() throws InterruptedException {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        orangePage.fillupRegistration();
+        demoQAPages.getOrangePage().fillupRegistration();
         Thread.sleep(5000);
 
     }
