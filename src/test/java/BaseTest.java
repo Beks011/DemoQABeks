@@ -27,6 +27,7 @@ public  class BaseTest {
         demoQAPages = new DemoQAPages();
         orangePage  =new OrangePage();
         progressBarPage = new ProgressBarPage();
+        demoQAPages.setUp();
 
 
 

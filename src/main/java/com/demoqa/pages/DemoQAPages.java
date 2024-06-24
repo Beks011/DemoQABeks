@@ -8,7 +8,14 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class DemoQAPages {
-    public TextBoxPage textBoxPage = new TextBoxPage();
-    public WebTablesPage webTablesPage = new WebTablesPage();
-    public PracticeFormPage practiceFormPage = new PracticeFormPage();
+    public TextBoxPage textBoxPage;
+    public WebTablesPage webTablesPage;
+    public PracticeFormPage practiceFormPage;
+
+    public void setUp(){
+        textBoxPage = new TextBoxPage();
+        webTablesPage = new WebTablesPage();
+        practiceFormPage = new PracticeFormPage();
+
+    }
 }
