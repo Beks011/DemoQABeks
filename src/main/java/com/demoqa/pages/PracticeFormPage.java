@@ -51,8 +51,8 @@ public class PracticeFormPage extends BasePage{
     @FindBy(id = "submit")
     public WebElement submitBtn;
 
-    @FindBy(xpath = "(//button[@type='button'])[2]")
-    public WebElement closeAlert;
+//    @FindBy(xpath = "(//button[@type='button'])[2]")
+//    public WebElement closeAlert;
 
     @FindBy(className = "react-datepicker__input-container")
     public WebElement datePickerBtn;
@@ -70,8 +70,8 @@ public class PracticeFormPage extends BasePage{
                 .sendKeys (currentAddressInput,practiseFormEntity.getCurrentAddress())
                 .sendKeysWithEnter(stateInput,practiseFormEntity.getState())
                 .sendKeysWithEnter(cityInput,practiseFormEntity.getCity())
-                .click(submitBtn)
-                .click(closeAlert);
+                .click(submitBtn);
+//                .click(closeAlert);
         return this;
 
 
