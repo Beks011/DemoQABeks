@@ -10,5 +10,6 @@ public class OrangeTest extends BaseTest{
         demoQAPages.getOrangePage().fillupRegistration();
         Thread.sleep(5000);
 
+
     }
 }

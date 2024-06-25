@@ -1,4 +1,5 @@
 import com.demoqa.entities.PractiseFormEntity;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PracticeFormTest extends BaseTest {
@@ -8,5 +9,6 @@ public class PracticeFormTest extends BaseTest {
         PractiseFormEntity practiseFormEntity = randomUtils.ganeraterandomPractiseFormEntity();
         practiceFormPage.fillUpPracticeFormPage(practiseFormEntity);
         Thread.sleep(5000);
+        Assert.assertEquals(practiceFormPage.currentAddressInput.getText(),"hgfghjk");
     }
 }
