@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class TextBoxTest extends BaseTest {
-     @Test(groups = {"Smoke","1"},description = "TextBoxTest")
+     @Test(groups = {"Smoke","1","UI"},description = "TextBoxTest")
     public void textBoxTest(){
          driver.get("https://demoqa.com/text-box");
          TextBoxEntity textBoxEntity = randomUtils.generaterandomTextBoxEntity();
